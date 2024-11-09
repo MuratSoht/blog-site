@@ -1,0 +1,205 @@
+.form_comment_block {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.form_comment_block label {
+    display: none;
+}
+.form_comment_form {
+    display: flex;
+    flex-direction: column;
+}
+.form_comment_form > textarea {
+    resize: none;
+    padding: 10px 10px 80px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid (204, 204, 204);
+    min-height: 50px;
+    flex: 0 0 auto;
+}
+.form_comment_button {
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+.comment-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.comment-form h2 {
+margin: 0 0 10px;
+}
+.comment-form > form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.comment-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.comment-form button:hover {
+    background-color: #45a049;
+}
+.comments-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.comment:last-child {
+border-bottom: none;
+}
+.comment p {
+    margin: 5px 0;
+}
+
+.comments {
+    margin-top: 40px; /* Отступ сверху для секции комментариев */
+}
+
+.comments h3 {
+    margin-bottom: 15px; /* Отступ снизу заголовка комментариев */
+}
+
+.comment {
+    display: flex; /* Используем flex для размещения аватара и текста комментария */
+    margin-bottom: 20px; /* Отступ между комментариями */
+}
+
+.comment-avatar {
+    margin-right: 15px; /* Отступ справа для аватара */
+}
+
+.comment-avatar img {
+    width: 50px; /* Ширина аватара */
+    height: 50px; /* Высота аватара */
+    border-radius: 50%; /* Круглая форма аватара */
+}
+
+.comment-content {
+    background: #f1f1f1; /* Светлый фон для текста комментария */
+    padding: 10px; /* Отступы внутри блока комментария */
+    border-radius: 8px; /* Скругление углов блока комментария */
+    flex: 1; /* Занимает оставшееся пространство */
+}
+
+.comment-author {
+    margin-bottom: 5px; /* Отступ снизу для имени автора */
+    font-weight: bold; /* Жирный шрифт для имени автора */
+}
+
+.comment-text {
+    color: #495057; /* Цвет текста комментария */
+}
+
+.comment-form {
+    margin-top: 20px; /* Отступ сверху для формы комментариев */
+}
+
+.comment-form textarea {
+    width: 100%; /* Ширина текстовой области */
+    height: 100px; /* Высота текстовой области */
+    padding: 10px; /* Отступы внутри текстовой области */
+    border: 1px solid #ccc; /* Граница текстовой области */
+    border-radius: 4px; /* Скругление углов */
+    resize: none; /* Запрет изменения размера */
+}
+
+.comment-form button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    background: #007BFF; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 4px; /* Скругление углов кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background 0.3s; /* Плавный переход цвета фона */
+}
+
+.comment-form button:hover {
+    background: #0056b3; /* Темнее синий цвет при наведении */
+}
+
+.comment-date {
+    font-size: 0.9em; /* Размер шрифта для даты */
+    color: #6c757d; /* Цвет текста для даты */
+    margin-bottom: 5px; /* Отступ снизу для даты */
+}
+
+.comment-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.related-articles {
+    margin-top: 40px; /* Отступ сверху для секции похожих статей */
+}
+
+.related-articles h3 {
+    margin-bottom: 20px; /* Отступ снизу заголовка секции */
+}
+
+.article-card {
+    background: #fff; /* Белый фон для карточки статьи */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+    padding: 15px; /* Отступы внутри карточки */
+    margin-bottom: 20px; /* Отступ снизу для карточки */
+    transition: transform 0.3s; /* Плавный переход для эффекта при наведении */
+}
+
+
+.article-image {
+    width: 100%; /* Ширина изображения карточки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px; /* Скругление углов изображения */
+}
+
+.article-title {
+    font-size: 1.5em; /* Размер заголовка статьи */
+    margin: 10px 0; /* Отступы сверху и снизу заголовка */
+}
+
+.article-description {
+    color: #495057; /* Цвет текста описания */
+    margin-bottom: 15px; /* Отступ снизу для описания */
+}
+
+.read-more {
+    display: inline-block; /* Отображение как блочный элемент */
+    padding: 10px 15px; /* Отступы внутри ссылки */
+    background: #007BFF; /* Цвет фона ссылки */
+    color: white; /* Цвет текста ссылки */
+    border-radius: 4px; /* Скругление углов */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background 0.3s; /* Плавный переход цвета фона */
+}
+
+.read-more:hover {
+    background: #0056b3; /* Темнее синий цвет при наведении */
+}

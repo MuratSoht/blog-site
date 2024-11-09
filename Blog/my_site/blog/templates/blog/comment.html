@@ -1,0 +1,31 @@
+{% load blog-tags %}
+{% load static %}
+<div class="comment-form">
+  <h2>
+    Оставьте комментарий
+  </h2>
+  <form action="{{ post.get_absolute_url }}" method="post">
+    {% csrf_token %}
+    <div class="form_comment_block">
+      {{ form_comment }}
+      <button id="submitComment">Отправить</button>
+    </div>
+  </form>
+</div>
+<section class="comments">
+    <h3>Комментарии</h3>
+    {% for comment in comments %}
+    <div class="comment">
+        <div class="comment-avatar">
+            <img src="{% static 'blog/images/1f28c68d2c35f389966b5a363b992d06.png' %}" alt="Аватар пользователя Алексей">
+        </div>
+        <div class="comment-content">
+            <div class="comment-user-info">
+                <p class="comment-author"><strong>{{ comment.author }}</strong></p>
+                <p class="comment-date">{{ comment.create_data|date:"d.m.Y" }}</p>
+            </div>
+            <p class="comment-text">{{ comment.text|linebreaks }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>

@@ -1,0 +1,13 @@
+<div class="pagination">
+    {% if page.has_previous %}
+    <a class="pagination-link" href="?page={{ page.previous_page_number }}" id="prevButton" disabled>Назад</a>
+    {% else %}
+    <button class="pagination-link" disabled>Назад</button>
+    {% endif %}
+    <span id="currentPage">{{ page.number }}</span> из<span id="totalPages">{{page.paginator.num_pages}}</span>
+    {% if page.has_next %}
+    <a class="pagination-link" href="?page={{ page.next_page_number }}" id="nextButton">Вперед</a>
+    {% else %}
+    <button class="pagination-link" disabled>Вперед</button>
+    {% endif %}
+</div>

@@ -1,0 +1,41 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.header {
+    background-color: black;
+    position: fixed;
+    top:0;
+    height: 50px;
+    width: 100%;
+}
+.header_span {
+    color: white;
+}
+.header_item > a {
+    color: white;
+    text-decoration: none;
+}
+.header_item > span {
+    color: white;
+}
+
+.post_tags_link {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.post_tags {
+    font-size: 13px
+}
+.post_tags_link:hover {
+    color: rgb(10, 88, 202);
+}
+.post_info {
+    margin-bottom: 8px;
+}

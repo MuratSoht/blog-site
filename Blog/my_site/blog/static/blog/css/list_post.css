@@ -1,0 +1,126 @@
+.header_list {
+    display: flex;
+}
+.all_post_heading {
+    margin-top: 70px;
+}
+.post h2 a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex; /* Используем Flexbox для body */
+    flex-direction: column; /* Устанавливаем направление колонок */
+}
+
+.header-title {
+    margin-bottom: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1; /* Позволяем основному контенту занимать оставшееся пространство */
+    max-width: 1100px;
+    margin: 20px auto;
+    margin-top: 80px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.article:hover {
+    background: #e0e0e0;
+}
+
+.article-title {
+    margin-bottom: 10px;
+}
+
+.article-summary {
+    margin-bottom: 10px;
+}
+
+.article-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    background: #45a049;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.article-meta {
+    font-size: 0.9em; /* Уменьшаем размер шрифта для метаданных */
+    color: #555; /* Цвет текста для метаданных */
+    margin-bottom: 5px; /* Отступ между метаданными и содержанием */
+}
+.article-meta-last {
+    margin-bottom: 10px;
+}
